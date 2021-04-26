@@ -21,6 +21,7 @@ int main() {
     //0が一つもない
     ll ans = powmod(10, n) - powmod(9, n) - powmod(9, n) + powmod(8, n);
     //負の場合の対策(正なら何も変わらない)
+    ans %= mod;
     ans = (ans + mod) % mod;
     cout << ans << endl;
 }
